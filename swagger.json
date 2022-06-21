@@ -71154,7 +71154,7 @@
                     "title": "Assigned object",
                     "type": "object",
                     "additionalProperties": {
-                        "type": "string",
+                        "type": "object",
                         "x-nullable": true
                     },
                     "readOnly": true
@@ -71254,7 +71254,7 @@
                     "title": "Assigned object",
                     "type": "object",
                     "additionalProperties": {
-                        "type": "string",
+                        "type": "object",
                         "x-nullable": true
                     },
                     "readOnly": true
@@ -72385,7 +72385,7 @@
                     "title": "Assigned object",
                     "type": "object",
                     "additionalProperties": {
-                        "type": "string",
+                        "type": "object",
                         "x-nullable": true
                     },
                     "readOnly": true
@@ -72519,7 +72519,7 @@
                     "title": "Assigned object",
                     "type": "object",
                     "additionalProperties": {
-                        "type": "string",
+                        "type": "object",
                         "x-nullable": true
                     },
                     "readOnly": true
