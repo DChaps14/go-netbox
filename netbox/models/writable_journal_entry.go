@@ -39,7 +39,7 @@ type WritableJournalEntry struct {
 
 	// Assigned object
 	// Read Only: true
-	AssignedObject map[string]*string `json:"assigned_object,omitempty"`
+	AssignedObject map[string]*interface{} `json:"assigned_object,omitempty"`
 
 	// Assigned object id
 	// Required: true
