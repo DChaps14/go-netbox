@@ -45,7 +45,7 @@ type ObjectChange struct {
 	// Serialize a nested representation of the changed object.
 	//
 	// Read Only: true
-	ChangedObject map[string]*string `json:"changed_object,omitempty"`
+	ChangedObject interface{} `json:"changed_object,omitempty"`
 
 	// Changed object id
 	// Required: true
@@ -67,11 +67,11 @@ type ObjectChange struct {
 
 	// Postchange data
 	// Read Only: true
-	PostchangeData string `json:"postchange_data,omitempty"`
+	PostchangeData interface{} `json:"postchange_data,omitempty"`
 
 	// Prechange data
 	// Read Only: true
-	PrechangeData string `json:"prechange_data,omitempty"`
+	PrechangeData interface{} `json:"prechange_data,omitempty"`
 
 	// Request id
 	// Read Only: true
