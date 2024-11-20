@@ -346,7 +346,7 @@ func (m *ObjectChange) contextValidateID(ctx context.Context, formats strfmt.Reg
 
 func (m *ObjectChange) contextValidatePostchangeData(ctx context.Context, formats strfmt.Registry) error {
 
-	if err := validate.ReadOnly(ctx, "postchange_data", "body", string(m.PostchangeData)); err != nil {
+	if err := validate.ReadOnly(ctx, "postchange_data", "body", m.PostchangeData); err != nil {
 		return err
 	}
 
@@ -355,7 +355,7 @@ func (m *ObjectChange) contextValidatePostchangeData(ctx context.Context, format
 
 func (m *ObjectChange) contextValidatePrechangeData(ctx context.Context, formats strfmt.Registry) error {
 
-	if err := validate.ReadOnly(ctx, "prechange_data", "body", string(m.PrechangeData)); err != nil {
+	if err := validate.ReadOnly(ctx, "prechange_data", "body", m.PrechangeData); err != nil {
 		return err
 	}
 
