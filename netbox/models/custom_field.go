@@ -56,7 +56,7 @@ type CustomField struct {
 	// Default
 	//
 	// Default value for the field (must be a JSON value). Encapsulate strings with double quotes (e.g. "Foo").
-	Default *string `json:"default,omitempty"`
+	Default interface{} `json:"default,omitempty"`
 
 	// Description
 	// Max Length: 200
